@@ -35,7 +35,7 @@ app.get("/getImg",(req,res)=>{
     .then(users=>res.status(200).json(users))
     .catch(err=> res.json(err))
 })
-mongoose.connect("mongodb://localhost:27017/employee")
+mongoose.connect("mongodb+srv://ks_anandh:nandha1432@cluster0.q8u6zz9.mongodb.net/multer?retryWrites=true&w=majority&appName=Cluster0")
 .then(()=>{
     app.listen(PORT, () => {
         console.log(`Server is running on port ${PORT}`);
